@@ -53,7 +53,7 @@ Starting with 0.36 the InfluxDB component has a new schema to store values in th
 
 ### {% linkable_title Migration script %}
 
-If you need to migrate your database, you may require to run the `influxdb_migrator` script. Run the script after upgrade to 0.36 but before first regular start of `hass` version 0.36.
+If you need to migrate your database, you may require to run the `influxdb_migrator` script. Run the script after upgrade to 0.36 but before first regular start of `hass` version 0.36. For run script you need `influxdb` python module. You can install it by run `pip install influxdb`.
 
 These are the steps the script will perform:
 1. Create a new database (called `DBNAME__old`) to store old data.
